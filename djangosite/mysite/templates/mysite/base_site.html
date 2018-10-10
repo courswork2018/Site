@@ -1,0 +1,19 @@
+{% extends 'base.html' %}
+
+{% block text %}
+<html>
+ <head>
+  <meta charset="utf-8">
+  <title>Тег TEXTAREA</title>
+ </head>
+ <body>
+
+  <form action="textarea1.php" method="post">
+    <p><b>Введите ваше сообщение для анализа:</b></p>
+    <p><textarea  placeholder="Здесь может быть любое вашее сообщение или мнение." resize=autoResize rows="5" cols="50" name="text"></textarea></p>
+    <p><input type="submit" value="Проанализировать"></p>
+  </form>
+
+ </body>
+</html>
+{% endblock %}

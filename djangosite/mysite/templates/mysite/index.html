@@ -1,0 +1,16 @@
+{% extends 'mysite/base_site.html' %}
+
+
+
+{% block title %}
+    Sentiment Analys
+{% endblock %}
+
+{% block content %}
+    <h1 class="mb-3">Создатели:</h1>
+    {% for name in names %}
+        <p>
+            {{ name }}
+        </p>
+    {% endfor %}
+{% endblock %}
