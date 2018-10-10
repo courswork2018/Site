@@ -8,10 +8,40 @@
  </head>
  <body>
 
-  <form action="textarea1.php" method="post">
-    <p><b>Введите ваше сообщение для анализа:</b></p>
-    <p><textarea  placeholder="Здесь может быть любое вашее сообщение или мнение." resize=autoResize rows="5" cols="50" name="text"></textarea></p>
-    <p><input type="submit" value="Проанализировать"></p>
+
+    <p><b><font size="6" color=white face="Monotype Corsiva">Введите ваше сообщение для анализа:</b></p></font>
+    <p><textarea id="msg2" placeholder="Здесь может быть любое ваше сообщение или мнение."
+    resize=autoResize rows="5" cols="50" name="text2"></textarea></p><span id="status"></span></p>
+    <p><textarea id="msg1" placeholder="Здесь должен быть скпированный текст."
+    resize=autoResize rows="5" cols="50" name="text1"></textarea></p><span id="status"></span></p>
+
+
+   <script>
+   function myFunction() {
+       document.getElementById("msg1").value = document.getElementById("msg2").value;
+   }
+   </script>
+</head>
+<body>
+
+
+
+    <font size="4" color="white" face="Monotype Corsiva"><a href="#" class="button24" onclick="myFunction()" >Проанализировать</a></font>
+    <p><style>
+    a.button24 {
+      display: inline-block;
+      color: white;
+      text-decoration: none;
+      padding: .5em 2em;
+      outline: none;
+      border-width: 2px 0;
+      border-style: solid none;
+      border-radius: 6px;
+      background: linear-gradient(#a1a6e2, #0c175f) #0c175f;
+      transition: 0.2s;
+    }
+
+    </style></p>
   </form>
 
  </body>
