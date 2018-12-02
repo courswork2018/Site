@@ -7,7 +7,7 @@ install:
 
 script:
   - python -m unittest pytest -v
-  - python -m unittest pytest2 -v
+#  - python -m unittest pytest2 -v
 
 notifications:
   email:
