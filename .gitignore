@@ -1,0 +1,23 @@
+## Scratch Work ##
+notes
+notebooks
+
+### Django Default ###
+*.log
+*.pot
+*.pyc
+__pycache__
+local_settings.py
+db.sqlite3
+
+# Dependencies
+**.ipynb_checkpoints
+.cache
+.pytest_cache
+
+### VisualStudioCode ###
+.vscode/*
+!.vscode/settings.json
+!.vscode/tasks.json
+!.vscode/launch.json
+!.vscode/extensions.json
