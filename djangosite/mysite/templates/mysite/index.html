@@ -1,0 +1,17 @@
+{% extends 'mysite/base_site.html' %}
+
+
+
+{% block title %}
+    Sentiment Analys
+{% endblock %}
+
+{% block content %}
+
+    <h1><font size="12" color="white" face="Monotype Corsiva">Создатели:</font></h1>
+    {% for name in names %}
+        <p>ஐ<font size="5" color="white" face="Monotype Corsiva">
+            {{ name }}
+        </p></font>
+    {% endfor %}
+{% endblock %}
