@@ -21,8 +21,8 @@
 <hr>
   Если у Вас возникли вопросы, связанные с установкой Python и Django на Windows, то попробуйте посмотреть видео ниже
   
-  [![Watch the video]http://img.youtube.com/vi/VIDEO-ID/0.jpg)](https://www.youtube.com/watch?time_continue=4&v=4RQ2USIaINs)
-  
-  <iframe width="854" height="480" src="https://www.youtube.com/embed/yrRPLBYiiEc" frameborder="0" allowfullscreen></iframe>
+ [![Watch the video](https://raw.github.com/GabLeRoux/WebMole/master/ressources/WebMole_Youtube_Video.png)](http://youtu.be/vt5fpE0bzSY)
+ 
+ <iframe width="955" height="539" src="https://www.youtube.com/embed/4RQ2USIaINs" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
   
   Если после этого у вас всё равно не получается запустить "Анализатор тональности", то Вы можете связаться с нашим разработчиком по e-mail <maryska-98@mail.ru>
