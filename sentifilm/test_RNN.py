@@ -12,9 +12,11 @@ class Test_RNN(unittest.TestCase):
         list = cursor.fetchall()
         k = 0
         for i in list:
-            score = views.text(i[0])
+            # score = views.text(i[0])
+            score = views.text(i[1])
             score = round(float(score))
-            if score == int(i[1]):
+            # if score == int(i[1]):
+            if score == int(i[2]):
                 k += 1
         self.assertGreater(round(k / len(list) * 100), 60)
 
