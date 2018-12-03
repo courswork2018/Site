@@ -6,9 +6,9 @@ class Test_RNN(unittest.TestCase):
 
     # @unittest.skip('skip test')
     def test_rnn(self):
-        conn = sqlite3.connect("../test_base/test_base1.db")
+        conn = sqlite3.connect("../test_base/test_base.db")
         cursor = conn.cursor()
-        cursor.execute("SELECT * FROM test_base1")
+        cursor.execute("SELECT * FROM test_base")
         list = cursor.fetchall()
         k = 0
         for i in list:
