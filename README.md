@@ -17,7 +17,7 @@
 5. Установить [Django 2.1](https://www.djangoproject.com/download/)
 6. Скачать библиотеки [Keras](https://pypi.org/project/Keras/) и [TensorFlow](https://www.tensorflow.org/install/)
 7. Открыть проект с помощью Windows PowerShell. Чтобы это сделать, необходимо зажать Shift и кликнуть правой кнопкой мыши на папку с проектом. В открывшемся меню следует выбрать "Открыть окно PowerShell здесь". Если такой записи нет, то PowerShell можно скачать [здесь](https://soft.mydiv.net/win/download-Windows-PowerShell.html).
-8. В открывшейся консоли следует ввести "python manag.py runserver"
+8. В открывшейся консоли следует ввести `python manag.py runserver`
 <hr>
   Если у Вас возникли вопросы, связанные с установкой Python и Django на Windows, то попробуйте посмотреть видео ниже.
   
