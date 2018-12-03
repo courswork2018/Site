@@ -6,9 +6,9 @@ class Test_RNN(unittest.TestCase):
 
     # @unittest.skip('skip test')
     def test_rnn(self):
-        conn = sqlite3.connect("../test_base/test_base.db")
+        conn = sqlite3.connect("../test_base/test_base11.db")
         cursor = conn.cursor()
-        cursor.execute("SELECT * FROM test_base")
+        cursor.execute("SELECT * FROM test_base11")
         list = cursor.fetchall()
         k = 0
         for i in list:
@@ -20,8 +20,8 @@ class Test_RNN(unittest.TestCase):
                 k += 1
         self.assertGreater(round(k / len(list) * 100), 60)
 
-    def test_spase(self):
-        self.assertRaises(BaseException, views.text, "") #(exs, fun, *args, **kwds) — fun(*args, **kwds) порождает исключение exc
+    # def test_spase(self):
+    #     self.assertRaises(BaseException, views.text, "") #(exs, fun, *args, **kwds) — fun(*args, **kwds) порождает исключение exc
 
     # def test_enter(self):
     #     self.assertRaises(BaseException, sentifilm.views.work_rnn, "\n", loaded_model)
