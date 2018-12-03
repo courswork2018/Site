@@ -4,11 +4,8 @@ from keras import backend as K
 from keras.preprocessing import sequence
 import keras.utils
 from django.shortcuts import render
-
 import codecs
 from keras.models import model_from_yaml
-
-
 
 def home(request):
     return render(request, 'index.html')
@@ -45,11 +42,8 @@ def text(fulltext):
     return score
 
 def analysis(request):
-
     fulltext = request.GET['fulltext']
     score = predict_sentiment(fulltext)
-
-
     if score > 0.5:
         sentiment = "позитивным"
     else:
