@@ -1,73 +1,19 @@
 <h1 align="center">
-  <img src="media/review-icon.png" width="20%"><br/>SentiFilm
+  Инструкция по развёртыванию сервера
 </h1>
 
-<h4 align="center">
-  🎬 Movie Review Sentiment Analytics Django App
-</h4>
-
-<div align="center">
-    <img src="media/output.gif" width="800" alighn="center">
+<div align="justify">
+    Если Вы собираетесь развернуть сервер в свой сети, то следуйте алгоритму ниже.
 </div>
 
-## Contents
-
-* [Overview](#overview)
-* [Dataset](#dataset)
-* [Dependencies](#dependencies)
-* [Improvements](#improvements)
-* [References](#references)
-* [Attribution](#attribution)
-* [Contributing](#contributing)
-* [License](#license)
-
-## Overview
-
-SentiFilm is a simple web app that gives you the sentiment of a movie review with a polarity score. I will be adding more features to this application in order to improve performace and give more information regarding the text input. For now, Sentifilm uses a lexical model to compute sentiment of a given text.
-
-## Dataset
-
-The dataset that was used was the [IMDB Movie Review dataset](http://ai.stanford.edu/~amaas/data/sentiment/).
-
-## Dependencies
-
-*Note these dependencies are being used for other sentiment analysis methods that are currently not included in the application however will later be added.*
-
-* Spacy
-* Django
-* NumPy
-* NLTK
-* Pandas
-* Requests
-* Gensim
-* SciPy
-* Matplotlib
-* Keras
-* Afinn
-* Scikit Learn
-* Beautiful Soup 4
-* Skater
-
-## Improvements
-
-These are some additional features I want to add in order to have this web app give more information regarding the text input.
-
-- [_] Implement supervised methods trained on dataset for better performance
-- [_] Implement topic modeling and visualization for text input
-- [_] Improve UI
-
-## References
-
-* [Lexicon-Based Methods for Sentiment Analysis](https://www.mitpressjournals.org/doi/pdf/10.1162/COLI_a_00049)
-
-## Attribution
-
-* Icon by [Wichai Wi](https://thenounproject.com/vividzfoto/) from [thenounproject](https://thenounproject.com/)
-
-## Contributing
-
-Contributions are always welcome! For bug reports or requests please submit an issue.
-
-## License
-
-[MIT](https://github.com/moebg/sentifilm/blob/master/LICENSE)
+**Алгоритм**
+1. Скачать [PyCharm](https://www.jetbrains.com/pycharm/download/#section=windows)
+2. Скачать [Python 3.6.X](https://www.python.org/downloads/)
+3. Скачать с [репозитория](https://github.com/courswork2018/Site) на GitHub все файлы
+4. Установить менеджер пакетов [pip 18.1](https://pip.pypa.io/en/stable/installing/#upgrading-pip) или обновить его до этой версии
+5. Установить [Django 2.0](https://www.djangoproject.com/download/)
+6. Скачать библиотеки [Keras](https://pypi.org/project/Keras/) и [TensorFlow](https://www.tensorflow.org/install/)
+7. Открыть проект с помощью Windows PowerShell. Чтобы это сделать, необходимо зажать Shift и кликнуть правой кнопкой мыши на папку с проектом. В открывшемся меню следует выбрать "Открыть окно PowerShell здесь". Если такой записи нет, то PowerShell можно скачать [здесь](https://soft.mydiv.net/win/download-Windows-PowerShell.html).
+8. В открывшейся консоли следует ввести "python manag.py runserver"
+<hr>
+  Если после этого у вас не получается запустить "Анализатор тональности, то Вы можете связаться с нашим разработчиком по e-mail maryska-98@mail.ru
