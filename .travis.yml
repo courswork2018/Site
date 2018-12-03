@@ -5,9 +5,10 @@ python:
 install:
   - pip install -r requirements.txt
 
+before_script: cd pytest
+
 script:
-  - python -m unittest pytest\
-#  - python -m unittest pytest2 -v
+  - python -m unittest test_RNN
 
 #notifications:
 #  email:
