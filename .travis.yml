@@ -2,10 +2,10 @@ language: python
 python:
   - "3.6"
 
-before_install: cd sentifilm
-
 install:
   - pip install -r requirements.txt
+
+before_script: cd sentifilm
 
 script:
   - python -m unittest test_RNN
