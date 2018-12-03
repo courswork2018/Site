@@ -6,13 +6,13 @@ import keras.utils
 def loading_rnn():
     print("Загружаю сеть из файлов")
     # Загружаем данные об архитектуре сети
-    json_file = open("pytest/models/mnist_model.json", "r")
+    json_file = open("models/mnist_model.json", "r")
     loaded_model_json = json_file.read()
     json_file.close()
     # Создаем модель
     loaded_model = model_from_json(loaded_model_json)
     # Загружаем сохраненные веса в модель
-    loaded_model.load_weights("pytest/models/mnist_model.h5")
+    loaded_model.load_weights("models/mnist_model.h5")
     print("Загрузка сети завершена")
     return loaded_model
 

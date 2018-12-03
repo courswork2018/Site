@@ -1,5 +1,5 @@
 import unittest
-import pytest.save_network
+import save_network
 import sqlite3
 
 class Test_RNN(unittest.TestCase):
@@ -7,8 +7,8 @@ class Test_RNN(unittest.TestCase):
     #     loaded_model = save_network.loading_rnn()
 
     def test_rnn(self):
-        loaded_model = pytest.save_network.loading_rnn()
-        conn = sqlite3.connect("pytest/base/test_base1.db")
+        loaded_model = save_network.loading_rnn()
+        conn = sqlite3.connect("test_base/test_base1.db")
         cursor = conn.cursor()
         cursor.execute("SELECT * FROM test_base1")
         list = cursor.fetchall()
@@ -16,7 +16,7 @@ class Test_RNN(unittest.TestCase):
         k = 0
         for i in list:
             print(k)
-            score = pytest.save_network.work_rnn(i[0], loaded_model)
+            score = save_network.work_rnn(i[0], loaded_model)
             score = round(float(score))
             if score == int(i[1]):
                 k += 1
