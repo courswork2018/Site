@@ -9,6 +9,7 @@
 <h3 align="left">
   Алгоритм
 </h3>
+
 1. Скачать [PyCharm](https://www.jetbrains.com/pycharm/download/#section=windows)
 2. Скачать [Python 3.6.X](https://www.python.org/downloads/)
 3. Скачать с [репозитория](https://github.com/courswork2018/Site) на GitHub все файлы
