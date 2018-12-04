@@ -1,5 +1,5 @@
 import unittest
-import views
+from views import text
 import sqlite3
 import time
 
@@ -14,8 +14,9 @@ class Test_RNN(unittest.TestCase):
         global time11
         time11 = 0
         for i in list:
+            # print(i[0])
             start_time = time.time()
-            score = views.text(i[0])
+            score = text(i[0])
             time11 = time11 + (time.time() - start_time)
             score = round(float(score))
             if score == int(i[1]):
@@ -33,7 +34,7 @@ class Test_RNN(unittest.TestCase):
         time_ = 0
         for i in list:
             start_time = time.time()
-            score = views.text(i[1])
+            score = text(i[1])
             time_ = time_ + (time.time() - start_time)
             score = round(float(score))
             if score == int(i[2]):

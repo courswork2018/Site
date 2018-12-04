@@ -43,6 +43,10 @@ def predict_sentiment(fulltext):
     K.clear_session()
     return score
 
+def text(fulltext):
+    score = predict_sentiment(fulltext)
+    return score
+
 #Функция анализа тональности текста
 def analysis(request):
 
