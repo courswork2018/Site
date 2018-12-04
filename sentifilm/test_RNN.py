@@ -4,7 +4,6 @@ import sqlite3
 
 class Test_RNN(unittest.TestCase):
 
-    # @unittest.skip('skip test')
     def test_rnn_base11(self):
         conn = sqlite3.connect("../test_base/test_base11.db")
         cursor = conn.cursor()
@@ -13,10 +12,8 @@ class Test_RNN(unittest.TestCase):
         k = 0
         for i in list:
             score = views.text(i[0])
-            # score = views.text(i[1]) # fot test_base1
             score = round(float(score))
             if score == int(i[1]):
-            # if score == int(i[2]): # fot test_base1
                 k += 1
         self.assertGreater(round(k / len(list) * 100), 60)
 
@@ -27,11 +24,9 @@ class Test_RNN(unittest.TestCase):
         list = cursor.fetchall()[0:700:2]
         k = 0
         for i in list:
-            # score = views.text(i[0])
-            score = views.text(i[1]) # fot test_base1
+            score = views.text(i[1])
             score = round(float(score))
-            # if score == int(i[1]):
-            if score == int(i[2]): # fot test_base1
+            if score == int(i[2]):
                 k += 1
         self.assertGreater(round(k / len(list) * 100), 60)
 
@@ -44,6 +39,3 @@ class Test_RNN(unittest.TestCase):
     # @unittest.skip('skip test')
     # def test_enter(self):
     #     self.assertRaises(BaseException, sentifilm.views.work_rnn, "是的，昨天我不在家", loaded_model)
-
-# if __name__=="__main__":
-#     unittest.main()
