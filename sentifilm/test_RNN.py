@@ -45,7 +45,7 @@ class Test_RNN(unittest.TestCase):
     def test_time(self):
         # print(time.time())
         res_time = (time11 + time_) / 2
-        self.assertLess(res_time, 0.3)
+        self.assertLess(res_time, 0.6)
 
 
     # def test_spase(self):
